@@ -1,0 +1,24 @@
+<div>
+  <h2>Fomulário LOKO</h2>
+  
+  <div class="espaco">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="nome" />
+  </div>
+
+  <div class="espaco">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" [(ngModel)]="email" />
+  </div>
+
+  <div class="espaco">
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" [(ngModel)]="senha" />
+  </div>
+
+  <button (click)="cadastrar()">Cadastrar</button>
+
+  <div *ngIf="mensagem" [class]="cores">
+    <p>{{ mensagem }}</p>
+  </div>
+</div>
