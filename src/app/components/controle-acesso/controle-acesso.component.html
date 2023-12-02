@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngIf="showAdministrador">
+      <button (click)="showAdminMessage()">Administrador</button>
+
+    </div>
+    <div *ngIf="showColaborador">
+      <button (click)="showColabMessage()">Colaborador</button>
+    </div>
+    
+    <div *ngIf="showUsuario">
+      <button (click)="showUserMessage()">Usuário</button>
+    </div>
+  
+    <p *ngIf="showMessage !== ''"><strong>Você tem permissão de {{ showMessage }}</strong></p>
+  </div>
+  
