@@ -1,27 +1,28 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { AreaLogadaComponent } from "../area-logada/area-logada.component";
 
 @Component({
-  selector: 'app-form-login',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './form-login.component.html',
-  styleUrls: ['./form-login.component.css'] // Corrija para usar styleUrls
+    selector: 'app-form-login',
+    standalone: true,
+    templateUrl: './form-login.component.html',
+    styleUrls: ['./form-login.component.css'],
+    imports: [CommonModule, FormsModule, AreaLogadaComponent]
 })
 export class FormLoginComponent {
   email: string = '';
   senha: string = '';
-  mostrarMensagem: boolean = false;
+  mostrarMensagem: boolean = true;
+  camposPreenchidos: boolean = false;
 
   fazerLogin() {
-    if (this.email.trim() !== '' || this.senha.trim() !== '') {
-      // Se algum dos campos estiver vazio, exibe a mensagem
+    if (this.email.trim() === '' || this.senha.trim() === '') {
       this.mostrarMensagem = true;
+      this.camposPreenchidos = false;
     } else {
-      // Lógica para fazer login quando os campos não estão vazios
       this.mostrarMensagem = false;
-      // Adicione aqui a lógica para o login real
+      this.camposPreenchidos = true;
     }
   }
 }

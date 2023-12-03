@@ -8,9 +8,9 @@
 <button type="button" (click)="fazerLogin()">Fazer Login</button>
 
 <div *ngIf="mostrarMensagem; else camposPreenchidos">
-  <p>Campos estão preenchidos!</p>
+  <p>Por favor, preencha todos os campos.</p>
 </div>
 
 <ng-template #camposPreenchidos>
-  <p>Por favor, preencha todos os campos.</p>
+  <app-area-logada *ngIf="camposPreenchidos" [email]="email" [senha]="senha"></app-area-logada>
 </ng-template>

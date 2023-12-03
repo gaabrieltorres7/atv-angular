@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-area-logada',
-  standalone: true,
-  imports: [],
   templateUrl: './area-logada.component.html',
-  styleUrl: './area-logada.component.css'
+  styleUrls: ['./area-logada.component.css'],
+  standalone: true,
 })
 export class AreaLogadaComponent {
-
+  @Input() email: string = '';
+  @Input() senha: string = '';
 }
