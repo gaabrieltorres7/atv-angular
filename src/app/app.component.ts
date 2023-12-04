@@ -9,11 +9,14 @@ import { DadosAlunosComponent } from './components/dados-alunos/dados-alunos.com
 import { HttpClientModule } from '@angular/common/http';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { AreaLogadaComponent } from './components/area-logada/area-logada.component';
+import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
+import { ComponenteFilhoComponent } from './components/componente-filho/componente-filho.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ContadorComponentComponent, ListItemsComponent, FormCadastroComponent, ControleAcessoComponent, DadosAlunosComponent, HttpClientModule, FormLoginComponent, AreaLogadaComponent],
+  imports: [CommonModule, RouterOutlet, ContadorComponentComponent, ListItemsComponent, FormCadastroComponent,
+     ControleAcessoComponent, DadosAlunosComponent, HttpClientModule, FormLoginComponent, AreaLogadaComponent, ComponentePaiComponent, ComponenteFilhoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
