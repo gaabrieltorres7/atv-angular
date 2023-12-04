@@ -1,0 +1,37 @@
+{
+"alunos": [
+  {
+    "matricula": 12345687,
+    "nome": "Maethe Dias",
+    "idade": 20,
+    "curso": "Engenharia da Computação",
+    "rendimentoEscolar": {
+      "POO": 8,
+      "Front-end": 9,
+      "Back-end": 7
+    }
+  },
+  {
+    "matricula": 12662345,
+    "nome": "Gabriela Gomes",
+    "idade": 22,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "Mobile": 10,
+      "Front-end": 9.5,
+      "Back-end": 8
+    }
+  },
+  {
+    "matricula": 12662345,
+    "nome": "Flavio Sousa",
+    "idade": 21,
+    "curso": "Ciência da Computação",
+    "rendimentoEscolar": {
+      "Mobile": 8,
+      "Front-end": 7,
+      "Back-end": 10
+    }
+  }
+]
+}
