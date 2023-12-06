@@ -1,0 +1,25 @@
+<!-- <ul>
+    <li *ngFor="let produto of listaDeProdutos; let i = index">
+      {{ produto.nome }} - R$ {{ produto.preco | number:'1.2-2' }}
+    </li>
+  </ul> -->
+  
+  <!-- <div class="products">
+    <div class="product">
+      <div class="name">Produto 1</div>
+      <div class="price">R$ 2.600,00</div>
+      <button class="button">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+      <div class="name">Produto 2</div>
+      <div class="price">R$ 5.200,00</div>
+      <button class="button">Adicionar ao carrinho</button>
+    </div>
+  </div> -->
+
+  <p>COMPONENTE FILHO</p>
+<div *ngFor="let item of dadosDoPai">
+    {{ item.name }}
+    {{ item.salePrice }}
+  </div>

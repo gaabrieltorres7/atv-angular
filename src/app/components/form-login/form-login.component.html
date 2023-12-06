@@ -1,0 +1,16 @@
+<form #loginForm>
+  <label for="email">Email:</label><br />
+  <input type="text" id="email" name="email" [(ngModel)]="email" /><br />
+  <label for="senha">Senha:</label><br />
+  <input type="password" id="senha" name="senha" [(ngModel)]="senha" />
+</form>
+
+<button type="button" (click)="fazerLogin()">Fazer Login</button>
+
+<div *ngIf="mostrarMensagem; else camposPreenchidos">
+  <p>Por favor, preencha todos os campos.</p>
+</div>
+
+<ng-template #camposPreenchidos>
+  <app-area-logada *ngIf="camposPreenchidos" [email]="email" [senha]="senha"></app-area-logada>
+</ng-template>
